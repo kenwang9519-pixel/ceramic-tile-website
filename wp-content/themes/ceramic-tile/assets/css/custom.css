@@ -1,0 +1,267 @@
+/* ============================================================
+ * Ceramic Tile — 品牌自定义样式
+ *
+ * 品牌色：红色 #c41230
+ * 设计风格：简洁大气、产品大图主导
+ * ============================================================ */
+
+/* ===== CSS 变量 ===== */
+:root {
+    --brand-red: #c41230;
+    --brand-red-hover: #a30e24;
+    --brand-dark: #1a1a1a;
+    --brand-gray: #999999;
+    --brand-light-bg: #fafafa;
+    --brand-border: #e5e5e5;
+}
+
+/* ============================================================
+ * 顶部信息栏
+ * ============================================================ */
+.ast-top-bar {
+    background-color: var(--brand-dark) !important;
+    color: var(--brand-gray) !important;
+}
+
+.ast-top-bar a {
+    color: #ccc !important;
+}
+
+.ast-top-bar a:hover {
+    color: #fff !important;
+}
+
+/* ============================================================
+ * 主导航栏
+ * ============================================================ */
+.ast-primary-header-bar {
+    border-bottom: 2px solid var(--brand-red) !important;
+}
+
+.ast-header-menu .current-menu-item > a {
+    color: var(--brand-red) !important;
+}
+
+.main-header-menu > .menu-item > a:hover {
+    color: var(--brand-red) !important;
+}
+
+/* ============================================================
+ * 链接和按钮
+ * ============================================================ */
+a {
+    color: var(--brand-red);
+}
+
+a:hover {
+    color: var(--brand-red-hover);
+}
+
+/* Gutenberg 按钮 */
+.wp-block-button__link {
+    background-color: var(--brand-red) !important;
+    border-color: var(--brand-red) !important;
+}
+
+.wp-block-button__link:hover {
+    background-color: var(--brand-red-hover) !important;
+    border-color: var(--brand-red-hover) !important;
+}
+
+/* Astra 主题按钮 */
+.ast-custom-button {
+    background-color: var(--brand-red) !important;
+    border-color: var(--brand-red) !important;
+}
+
+.ast-custom-button:hover {
+    background-color: var(--brand-red-hover) !important;
+}
+
+/* ============================================================
+ * WooCommerce 产品
+ * ============================================================ */
+
+/* 产品网格 */
+.woocommerce ul.products li.product {
+    border: 1px solid var(--brand-border);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+}
+
+.woocommerce ul.products li.product:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* 询价按钮（原"加入购物车"） */
+.woocommerce .button.product_type_simple,
+.woocommerce a.button.add_to_cart_button {
+    background-color: var(--brand-red) !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    text-align: center !important;
+    display: block !important;
+    width: 80% !important;
+    margin: 10px auto !important;
+}
+
+.woocommerce .button.product_type_simple:hover,
+.woocommerce a.button.add_to_cart_button:hover {
+    background-color: var(--brand-red-hover) !important;
+}
+
+/* 产品详情页 */
+.woocommerce div.product {
+    padding: 0;
+}
+
+/* 隐藏评分 */
+.woocommerce div.product .star-rating,
+.woocommerce .star-rating {
+    display: none !important;
+}
+
+/* 隐藏 SKU */
+.woocommerce div.product .product_meta .sku_wrapper {
+    display: none;
+}
+
+/* 产品图片 */
+.woocommerce div.product div.images {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* 产品面包屑 */
+.woocommerce-breadcrumb {
+    font-size: 13px;
+    color: var(--brand-gray);
+}
+
+.woocommerce-breadcrumb a {
+    color: var(--brand-gray);
+}
+
+/* ============================================================
+ * 询价表单
+ * ============================================================ */
+.wpcf7-form .form-row {
+    margin-bottom: 18px;
+}
+
+.wpcf7-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 14px;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--brand-border);
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.wpcf7-form input[type="text"]:focus,
+.wpcf7-form input[type="tel"]:focus,
+.wpcf7-form input[type="email"]:focus,
+.wpcf7-form textarea:focus {
+    border-color: var(--brand-red);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(196, 18, 48, 0.1);
+}
+
+.wpcf7-form input[type="submit"] {
+    background-color: var(--brand-red) !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 14px 36px !important;
+    font-size: 16px !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    transition: background-color 0.2s ease;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+    background-color: var(--brand-red-hover) !important;
+}
+
+/* 表单验证错误 */
+.wpcf7-not-valid-tip {
+    color: var(--brand-red);
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+    border-color: var(--brand-red);
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #46b450;
+    background: #f0faf0;
+}
+
+/* ============================================================
+ * 页脚
+ * ============================================================ */
+.site-footer {
+    background-color: var(--brand-dark) !important;
+    color: #ccc !important;
+}
+
+.site-footer a {
+    color: var(--brand-gray) !important;
+}
+
+.site-footer a:hover {
+    color: #fff !important;
+}
+
+.site-footer .widget-title {
+    color: #fff !important;
+}
+
+.ast-small-footer {
+    border-top: 1px solid #333;
+    color: #666 !important;
+    background-color: var(--brand-dark) !important;
+}
+
+/* ============================================================
+ * 响应式
+ * ============================================================ */
+@media (max-width: 768px) {
+    .ast-header-break-point .main-header-bar {
+        border-bottom: 2px solid var(--brand-red);
+    }
+
+    .woocommerce ul.products li.product {
+        width: 100% !important;
+        margin-bottom: 16px;
+    }
+
+    .woocommerce .button.product_type_simple {
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .wpcf7-form input[type="submit"] {
+        padding: 14px 24px !important;
+        font-size: 15px !important;
+    }
+}

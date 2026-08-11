@@ -1,0 +1,9 @@
+wordpress/
+wp-content/plugins/
+wp-content/uploads/
+wp-content/upgrade/
+wp-config.php
+*.log
+config/*-credentials.txt
+.DS_Store
+Thumbs.db

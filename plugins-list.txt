@@ -1,0 +1,7 @@
+WooCommerce — 产品管理框架（目录模式，无购物/无价格）
+Contact Form 7 — 询价表单
+Flamingo — 表单数据存储到后台
+Yoast SEO — 搜索引擎优化
+WP Super Cache — 页面缓存加速
+Wordfence Security — 安全防护
+UpdraftPlus — 自动备份
