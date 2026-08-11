@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 — 陶瓷瓷砖企业官网</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 顶部信息栏 -->
+<div class="top-bar">
+    <div class="container">
+        <span>欢迎来到 [公司名称] — 专业陶瓷瓷砖供应商</span>
+        <span>📞 [联系电话] | ✉️ [邮箱地址]</span>
+    </div>
+</div>
+
+<!-- 导航栏 -->
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="nav-logo">[公司名称]</a>
+        <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">首页</a></li>
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="cases.html">工程案例</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="contact.html" class="nav-cta">立即询价</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 主横幅 -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-text">
+            <h1>[公司标语/口号]</h1>
+            <p>专业生产高品质陶瓷瓷砖，服务全球建筑商与设计师 — 自有工厂，品质保证，快速交货。</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn btn-primary">浏览产品</a>
+                <a href="contact.html" class="btn btn-outline">联系我们</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            瓷砖场景大图<span class="placeholder-label">待替换</span>
+        </div>
+    </div>
+</section>
+
+<!-- 产品分类入口 -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">产品分类</h2>
+        <p class="section-subtitle">按材质、空间、尺寸快速找到合适的产品</p>
+        <div class="cat-grid">
+            <a href="products.html?cat=space" class="cat-card">
+                <div class="cat-icon">🏠</div>
+                <h3>按空间</h3>
+                <p>客厅 / 浴室 / 厨房 / 商业</p>
+            </a>
+            <a href="products.html?cat=material" class="cat-card">
+                <div class="cat-icon">🧱</div>
+                <h3>按材质</h3>
+                <p>抛光砖 / 釉面 / 岩板 / 仿古</p>
+            </a>
+            <a href="products.html?cat=size" class="cat-card">
+                <div class="cat-icon">📐</div>
+                <h3>按尺寸</h3>
+                <p>600x600 / 600x1200 / 750x1500+</p>
+            </a>
+            <a href="products.html?cat=series" class="cat-card">
+                <div class="cat-icon">✨</div>
+                <h3>按系列</h3>
+                <p>大理石 / 水泥 / 木纹 / 更多</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 精选产品 -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">精选产品</h2>
+        <p class="section-subtitle">热门系列展示，点击查看详情或直接询价</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img">产品图片<span class="placeholder-label">待替换</span></div>
+                <div class="product-info">
+                    <div class="product-series">大理石系列</div>
+                    <div class="product-name">云石灰 600x1200mm</div>
+                    <div class="product-spec">抛光面 · 全瓷坯体</div>
+                    <a href="product.html" class="btn btn-primary">询价</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">产品图片<span class="placeholder-label">待替换</span></div>
+                <div class="product-info">
+                    <div class="product-series">水泥系列</div>
+                    <div class="product-name">工业灰 750x1500mm</div>
+                    <div class="product-spec">哑光面 · 防滑处理</div>
+                    <a href="product.html" class="btn btn-primary">询价</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">产品图片<span class="placeholder-label">待替换</span></div>
+                <div class="product-info">
+                    <div class="product-series">木纹系列</div>
+                    <div class="product-name">橡木浅棕 200x1200mm</div>
+                    <div class="product-spec">哑光面 · 全瓷坯体</div>
+                    <a href="product.html" class="btn btn-primary">询价</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">产品图片<span class="placeholder-label">待替换</span></div>
+                <div class="product-info">
+                    <div class="product-series">岩板系列</div>
+                    <div class="product-name">卡拉卡塔白 900x1800mm</div>
+                    <div class="product-spec">亮光面 · 岩板坯体</div>
+                    <a href="product.html" class="btn btn-primary">询价</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 公司优势 -->
+<section class="section">
+    <div class="container">
+        <div class="advantage-grid">
+            <div>
+                <div class="adv-icon">🏭</div>
+                <h3>自有工厂</h3>
+                <p>[工厂面积/产能数据]<span class="placeholder-label">待填写</span></p>
+            </div>
+            <div>
+                <div class="adv-icon">✅</div>
+                <h3>品质保证</h3>
+                <p>[认证/检测标准]<span class="placeholder-label">待填写</span></p>
+            </div>
+            <div>
+                <div class="adv-icon">🚚</div>
+                <h3>快速交货</h3>
+                <p>[交货周期/物流说明]<span class="placeholder-label">待填写</span></p>
+            </div>
+            <div>
+                <div class="adv-icon">🤝</div>
+                <h3>B2B 专属服务</h3>
+                <p>[样品寄送/定制服务]<span class="placeholder-label">待填写</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 工程案例 -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">工程案例</h2>
+        <p class="section-subtitle">过往合作的工程项目展示</p>
+        <div class="case-grid">
+            <div class="case-card">
+                工程案例照片<span class="placeholder-label">待替换</span>
+                <span style="font-size:12px;color:#bbb;">[项目名称]</span>
+            </div>
+            <div class="case-card">
+                工程案例照片<span class="placeholder-label">待替换</span>
+                <span style="font-size:12px;color:#bbb;">[项目名称]</span>
+            </div>
+            <div class="case-card">
+                工程案例照片<span class="placeholder-label">待替换</span>
+                <span style="font-size:12px;color:#bbb;">[项目名称]</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 页尾 -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h4>[公司名称]</h4>
+                <p>[公司简介，2-3句话说明公司定位和优势]<span class="placeholder-label">待填写</span></p>
+            </div>
+            <div>
+                <h4>产品分类</h4>
+                <ul>
+                    <li><a href="products.html?cat=space">按空间</a></li>
+                    <li><a href="products.html?cat=material">按材质</a></li>
+                    <li><a href="products.html?cat=size">按尺寸</a></li>
+                    <li><a href="products.html?cat=series">按系列</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="cases.html">工程案例</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="contact.html">询价表单</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>联系我们</h4>
+                <p>📞 [电话号码]<span class="placeholder-label">待填写</span><br>
+                📱 [微信号]<span class="placeholder-label">待填写</span><br>
+                ✉️ [邮箱地址]<span class="placeholder-label">待填写</span><br>
+                📍 [公司地址]<span class="placeholder-label">待填写</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            © 2026 [公司名称] 版权所有 | 粤ICP备XXXXXXXX号
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

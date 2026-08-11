@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 — 陶瓷瓷砖企业官网</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container">
+        <span>欢迎来到 [公司名称] — 专业陶瓷瓷砖供应商</span>
+        <span>📞 [联系电话] | ✉️ [邮箱地址]</span>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="nav-logo">[公司名称]</a>
+        <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="cases.html">工程案例</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html" class="active">联系我们</a></li>
+            <li><a href="contact.html" class="nav-cta">立即询价</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>联系我们</h1>
+        <p>期待与您的合作，请通过以下方式与我们联系</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="breadcrumb"><a href="index.html">首页</a> &gt; 联系我们</div>
+
+        <div class="contact-grid">
+            <!-- 左侧：询价表单 -->
+            <div>
+                <h3 style="font-size:20px;margin-bottom:20px;">在线询价</h3>
+                <form class="inquiry-form" id="inquiryForm">
+                    <div class="form-group">
+                        <label>您的姓名 *</label>
+                        <input type="text" name="name" placeholder="请输入您的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <label>公司名称 *</label>
+                        <input type="text" name="company" placeholder="请输入公司名称" required>
+                    </div>
+                    <div class="form-group">
+                        <label>联系电话/微信 *</label>
+                        <input type="tel" name="phone" placeholder="请输入联系电话或微信号" required>
+                    </div>
+                    <div class="form-group">
+                        <label>咨询产品</label>
+                        <input type="text" name="product" id="productField" placeholder="请填写您感兴趣的瓷砖产品">
+                    </div>
+                    <div class="form-group">
+                        <label>需求量</label>
+                        <input type="text" name="quantity" placeholder="例如：500平方米">
+                    </div>
+                    <div class="form-group">
+                        <label>留言</label>
+                        <textarea name="message" rows="4" placeholder="请描述您的需求（可选）"></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">提交询价</button>
+                </form>
+
+                <!-- 成功消息 -->
+                <div class="form-success" id="formSuccess">
+                    <div style="font-size:48px;margin-bottom:10px;">✅</div>
+                    <h3>感谢您的询价！</h3>
+                    <p style="margin-top:8px;">我们会尽快与您联系。</p>
+                </div>
+            </div>
+
+            <!-- 右侧：联系方式 -->
+            <div class="contact-info">
+                <h3>联系方式</h3>
+                <div class="contact-item">
+                    <span class="icon">📞</span>
+                    <div><strong>电话</strong><br><span style="color:#666;">[联系电话]<span class="placeholder-label">待填写</span></span></div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📱</span>
+                    <div><strong>微信</strong><br><span style="color:#666;">[微信号 / 二维码]<span class="placeholder-label">待填写</span></span></div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">✉️</span>
+                    <div><strong>邮箱</strong><br><span style="color:#666;">[邮箱地址]<span class="placeholder-label">待填写</span></span></div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📍</span>
+                    <div><strong>地址</strong><br><span style="color:#666;">[公司地址]<span class="placeholder-label">待填写</span></span></div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">🕐</span>
+                    <div><strong>工作时间</strong><br><span style="color:#666;">周一至周六 8:00-18:00</span></div>
+                </div>
+
+                <!-- 地图占位 -->
+                <div style="margin-top:20px;height:200px;background:#e0e0e0;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#999;font-size:14px;">
+                    百度地图 / 高德地图嵌入<span class="placeholder-label">待替换</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div><h4>[公司名称]</h4><p>[公司简介]<span class="placeholder-label">待填写</span></p></div>
+            <div><h4>产品分类</h4><ul><li><a href="products.html">按空间</a></li><li><a href="products.html">按材质</a></li><li><a href="products.html">按尺寸</a></li><li><a href="products.html">按系列</a></li></ul></div>
+            <div><h4>快速链接</h4><ul><li><a href="about.html">关于我们</a></li><li><a href="cases.html">工程案例</a></li><li><a href="contact.html">联系我们</a></li></ul></div>
+            <div><h4>联系我们</h4><p>📞 [电话]<span class="placeholder-label">待填写</span><br>✉️ [邮箱]<span class="placeholder-label">待填写</span><br>📍 [地址]<span class="placeholder-label">待填写</span></p></div>
+        </div>
+    </div>
+    <div class="footer-bottom"><div class="container">© 2026 [公司名称] 版权所有</div></div>
+</footer>
+
+<script>
+// 从 URL 参数自动填充产品名称
+const params = new URLSearchParams(window.location.search);
+const productParam = params.get('product');
+if (productParam) {
+    document.getElementById('productField').value = decodeURIComponent(productParam);
+}
+
+// 表单提交
+document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('inquiryForm').style.display = 'none';
+    document.getElementById('formSuccess').classList.add('show');
+});
+</script>
+
+</body>
+</html>
